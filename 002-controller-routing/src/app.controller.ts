@@ -1,14 +1,15 @@
 import { Controller, Get } from '@nestjs/common';
 
-@Controller('beautiful_controller')
-export class MyBeautifulController {
-  @Get()
+@Controller('beautiful')
+export class BeautifulController {
+
+  @Get('gorgeous')
   getHelloGorgeousPeople() {
-    return "Hello Gorgeous People!";
+    return 'Hello gorgeous people';
   }
 
-  @Get('/amazing')
+  @Get('amazing')
   getHelloAmazingPeople() {
-    return "Hello Amazing People!";
+    return 'Hello amazing people';
   }
 }
